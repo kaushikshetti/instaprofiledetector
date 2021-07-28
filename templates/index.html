@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>InstagramProfileDetector</title>
+    <link rel="shortcut icon" href="{{url_for('static',filename='instagram-16x16-icon-18.jpg')}}">
+    <!-- <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}"> -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../static/Javascript.js"></script>
+
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="text-center">
+                    <img src="../static/img/ig_1.png" alt="" width="190" height="190">
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="text-center pt-5">
+                    <p> Instagram Fake Profile Detection</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        <div class="row bg-white pt-1"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form name="passdata" action="." method="post" id="myForm">
+                    <input type="number" placeholder="User Follower Count" id="firstName" name="userfollowercount"
+                        required title="The number of followers in your Instagram account." min="0" max="" />
+
+                    <input type="number" placeholder="User Following Count" id="firstName1" name="userfollowingcount"
+                        required title="The number of accounts you follow from your Instagram account." min="0"
+                        max="" />
+
+                    <input type="number" placeholder="User Biography Length" id="firstName2" name="userbiographylength"
+                        required title="The length of your Instagram account's Bio." min="0" max="" />
+
+                    <input type="number" placeholder="User Media Count" id="firstName3" name="usermediacount" required
+                        title="The total number of posts made from your Instagram account." min="0" max="" />
+
+                    <input type="number" placeholder="User has a Profile Picture" min="0" max="1" id="firstName4"
+                        name="userhasprofilepic" required
+                        title="If your Instagram account has a profile picture, type 1 or else type 0." />
+
+                    <input type="number" placeholder="User is Private" min="0" max="1" id="firstName5"
+                        name="userisprivate" required
+                        title="If your Instagram account is private, type 1 or else type 0." />
+
+                    <input type="number" placeholder="Username Digit Count" id="firstName6" name="usernamedigitcount"
+                        required title="The number of numerical digits present in your Instagram account's username."
+                        min="0" max="" />
+
+                    <input type="number" placeholder="Username Length" id="firstName7" name="usernamelength" required
+                        title="The length of your Instagram account's username." min="0" max="" />
+
+                    <button type="submit" value="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
